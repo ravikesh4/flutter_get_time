@@ -52,6 +52,16 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: Text('Auckland'),
               ),
+
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => TimeZone(
+                    listUrl: 'https://jsonplaceholder.typicode.com/posts',
+                    color: Colors.cyan,
+                  ),));
+                },
+                child: Text('json'),
+              ),
             ],
           ),
         ),
